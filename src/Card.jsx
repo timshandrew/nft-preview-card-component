@@ -11,12 +11,12 @@ export default function Card() {
           src={productImage}
           alt="Etherem product image"
         />
-        <div className="bg-turqoise/50 col-span-full row-span-full flex h-full w-full cursor-pointer place-items-center rounded-2xl opacity-0 hover:opacity-100">
+        <div className="bg-turqoise/50 col-span-full row-span-full flex h-full w-full cursor-pointer place-items-center rounded-2xl opacity-0 transition-all duration-700 hover:opacity-100">
           <img className="m-auto" src={viewImg} />
         </div>
       </div>
 
-      <h1 className="hover:text-turqoise mb-4 text-xl font-semibold text-white hover:cursor-pointer">
+      <h1 className="hover:text-turqoise mb-4 text-xl font-semibold text-white transition-all duration-300 hover:cursor-pointer">
         Equilibrium #3429
       </h1>
       <p className="mb-4 text-gray-400">
@@ -40,7 +40,7 @@ export default function Card() {
         />
         <span className="mx-auto">
           Creation of{" "}
-          <span className="hover:text-turqoise text-white hover:cursor-pointer">
+          <span className="hover:text-turqoise text-white transition-all duration-300 hover:cursor-pointer">
             Jules Wyvern
           </span>
         </span>
