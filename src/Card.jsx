@@ -1,15 +1,22 @@
 import productImage from "/images/image-equilibrium.jpg";
 import avatarImg from "/images/image-avatar.png";
+import viewImg from "/images/icon-view.svg";
 
 export default function Card() {
   return (
     <div className="w-2xs rounded-2xl bg-teal-500 p-5 text-teal-400 shadow-2xl shadow-teal-700">
-      <img
-        className="mb-4 rounded-2xl"
-        src={productImage}
-        alt="Etherem product image"
-      />
-      <h1 className="mb-4 text-xl font-semibold text-white">
+      <div className="mb-4 grid place-items-center rounded-2xl">
+        <img
+          className="rows-1 col-span-full row-span-full rounded-2xl"
+          src={productImage}
+          alt="Etherem product image"
+        />
+        <div className="bg-turqoise/50 col-span-full row-span-full flex h-full w-full cursor-pointer place-items-center rounded-2xl opacity-0 hover:opacity-100">
+          <img className="m-auto" src={viewImg} />
+        </div>
+      </div>
+
+      <h1 className="hover:text-turqoise mb-4 text-xl font-semibold text-white hover:cursor-pointer">
         Equilibrium #3429
       </h1>
       <p className="mb-4 text-gray-400">
@@ -32,7 +39,10 @@ export default function Card() {
           alt="Creator avatar"
         />
         <span className="mx-auto">
-          Creation of <span className="text-white">Jules Wyvern</span>
+          Creation of{" "}
+          <span className="hover:text-turqoise text-white hover:cursor-pointer">
+            Jules Wyvern
+          </span>
         </span>
       </div>
     </div>
